@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "website_bucket" {
   bucket = "joelt-terraform-project" # choose a unique name
-  acl    = "private" # had to manually set ACL to private
+  acl    = "private"                
 
   website {
     index_document = "index.html"
